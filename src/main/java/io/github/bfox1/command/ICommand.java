@@ -5,11 +5,6 @@ import io.github.bfox1.utils.IActionResult;
 
 import java.util.LinkedList;
 
-/**
- * ICommand is to contain methods for creating a Command Class.
- * This Interface should NOT be interfaced with. Please use {@link Command} for extending.
- * Interfacing with ICommand will NOT work when Command gets executed.
- */
 public interface ICommand
 {
 

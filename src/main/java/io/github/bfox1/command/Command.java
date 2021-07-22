@@ -58,39 +58,22 @@ public abstract class Command implements ICommand
      */
     public abstract IActionResult<String> executeCommand(IEvent event, LinkedList<String> args);
 
-    /**
-     * Returns the name of the command given.
-     * @return commandName
-     */
     @Override
     public final String getName()
     {
         return name;
     };
-    /**
-     * The node string for permissions.
-     * @return The Permission node.
-     */
+
     @Override
     public final String getPermissionNode() {
         return permNode;
     }
-    /**
-     * Simple Method to return Module Name.
-     * All commands need a Module Name.
-     * Without one, Command will not be loaded.
-     * @return The Module Name.
-     */
     @Override
     public final String getModuleName()
     {
         return moduleName;
     }
-    /**
-     * Assigns the name of the Command with the name of the Module.
-     * This will be set automatically based on the name provided in the Module class.
-     * @param s The name of the Module.
-     */
+
     @Override
     public final void setModuleName(String s)
     {
