@@ -1,6 +1,5 @@
 package jdawrapper.channel;
 
-import jdawrapper.entity.IEmote;
 import jdawrapper.entity.IMember;
 import jdawrapper.entity.IMessage;
 

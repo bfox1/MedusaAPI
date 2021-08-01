@@ -1,4 +1,8 @@
-package jdawrapper.entity;
+package jdawrapper.channel;
+
+import jdawrapper.entity.IGuild;
+import jdawrapper.entity.IMember;
+import jdawrapper.entity.IRole;
 
 import java.util.List;
 
