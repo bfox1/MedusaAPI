@@ -1,4 +1,4 @@
-package jdawrapper.channel;
+package jdawrapper.entity;
 
 import jdawrapper.entity.IGuild;
 import jdawrapper.entity.IMember;

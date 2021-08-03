@@ -1,8 +1,7 @@
-package jdawrapper.channel;
+package jdawrapper.entity;
 
-import jdawrapper.entity.IMessage;
-import jdawrapper.entity.IMessageEmbed;
 
+import io.github.bfox1.utils.ActionResult;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -19,11 +18,11 @@ public interface IMessageChannel
 
     String getName();
 
-    void sendMessage(CharSequence text);
+    ActionResult<Void> sendMessage(CharSequence text);
 
-    void sendMessageFormat(String format, Object... args);
+    ActionResult<Void> sendMessageFormat(String format, Object... args);
 
-    void sendMessage(IMessageEmbed embed);
+    ActionResult<Void> sendMessage(IMessageEmbed embed);
 
     IMessage retrieveMessageById(String messageId);
 

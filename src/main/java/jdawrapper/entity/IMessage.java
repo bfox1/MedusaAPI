@@ -1,9 +1,5 @@
 package jdawrapper.entity;
 
-import jdawrapper.channel.IMessageChannel;
-import jdawrapper.channel.IPrivateChannel;
-import jdawrapper.channel.ITextChannel;
-
 import java.io.File;
 import java.io.InputStream;
 import java.util.List;

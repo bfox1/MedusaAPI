@@ -1,11 +1,8 @@
-package jdawrapper.channel;
-
-import jdawrapper.entity.IMember;
-import jdawrapper.entity.IMessage;
+package jdawrapper.entity;
 
 import java.util.Collection;
 
-public interface ITextChannel extends IMessageChannel
+public interface ITextChannel extends IMessageChannel, IGuildChannel
 {
     String getTopic();
 

@@ -1,6 +1,6 @@
 package jdawrapper.event;
 
-import jdawrapper.channel.IMessageChannel;
+import jdawrapper.entity.IMessageChannel;
 import jdawrapper.entity.IGuild;
 import jdawrapper.entity.IMember;
 import jdawrapper.entity.IMessage;
