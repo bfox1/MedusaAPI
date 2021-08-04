@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public interface IMessage
+public interface IMessage extends IGenericInterface
 {
 
     List<IUser> getMentionedUsers();

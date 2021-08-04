@@ -4,7 +4,7 @@ import io.github.bfox1.utils.ActionResult;
 
 import java.util.List;
 
-public interface IGuildChannel
+public interface IGuildChannel extends IGenericInterface
 {
 
     String getName();

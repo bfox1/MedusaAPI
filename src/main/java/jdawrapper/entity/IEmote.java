@@ -6,7 +6,7 @@ import jdawrapper.entity.IRole;
 
 import java.util.List;
 
-public interface IEmote
+public interface IEmote extends IGenericInterface
 {
     IGuild getGuild();
 

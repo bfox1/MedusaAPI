@@ -5,7 +5,7 @@ import io.github.bfox1.utils.ActionResult;
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public interface ICategory
+public interface ICategory extends IGenericInterface
 {
 
     List<IGuildChannel> getChannels();

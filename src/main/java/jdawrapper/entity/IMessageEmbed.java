@@ -1,4 +1,4 @@
 package jdawrapper.entity;
 
-public interface IMessageEmbed {
+public interface IMessageEmbed extends IGenericInterface{
 }

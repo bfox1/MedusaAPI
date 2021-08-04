@@ -1,4 +1,4 @@
 package jdawrapper.entity;
 
-public interface IMember {
+public interface IMember extends IGenericInterface {
 }

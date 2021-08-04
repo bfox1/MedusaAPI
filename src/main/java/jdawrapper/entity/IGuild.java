@@ -7,7 +7,7 @@ import javax.management.relation.Role;
 import java.lang.reflect.Member;
 import java.util.List;
 
-public interface IGuild
+public interface IGuild extends IGenericInterface
 {
     //General Guild Methods//
 

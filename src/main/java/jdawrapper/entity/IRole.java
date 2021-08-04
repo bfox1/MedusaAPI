@@ -1,4 +1,4 @@
 package jdawrapper.entity;
 
-public interface IRole {
+public interface IRole  extends IGenericInterface{
 }

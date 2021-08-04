@@ -6,11 +6,11 @@ import io.github.bfox1.utils.ActionResult;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public interface IMessageChannel
+public interface IMessageChannel extends IGenericInterface
 {
     String getLatestMessageId();
 
-    List<CompletableFuture> purgeMessagesById(List<String> messageIds);
+    List<CompletableFuture<Void>> purgeMessagesById(List<String> messageIds);
 
     long getLatestMessageIdLong();
 
@@ -18,11 +18,11 @@ public interface IMessageChannel
 
     String getName();
 
-    ActionResult<Void> sendMessage(CharSequence text);
+    ActionResult<IMessage> sendMessage(CharSequence text);
 
-    ActionResult<Void> sendMessageFormat(String format, Object... args);
+    ActionResult<IMessage> sendMessageFormat(String format, Object... args);
 
-    ActionResult<Void> sendMessage(IMessageEmbed embed);
+    ActionResult<IMessage> sendMessage(IMessageEmbed embed);
 
     IMessage retrieveMessageById(String messageId);
 

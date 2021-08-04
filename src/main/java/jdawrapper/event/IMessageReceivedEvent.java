@@ -1,12 +1,8 @@
 package jdawrapper.event;
 
-import jdawrapper.entity.IMessageChannel;
-import jdawrapper.entity.IGuild;
-import jdawrapper.entity.IMember;
-import jdawrapper.entity.IMessage;
-import jdawrapper.entity.IUser;
+import jdawrapper.entity.*;
 
-public interface IMessageReceivedEvent
+public interface IMessageReceivedEvent extends IGenericInterface
 {
     IMessageChannel getChannel();
 
