@@ -23,11 +23,13 @@ public interface IGuild extends IGenericInterface
 
     String getIconId();
 
+    String getName();
+
     String getDescription();
 
     int getBoostCount();
 
-    List<Member> getBoosters();
+    List<IMember> getBoosters();
 
     int getMaxMembers();
 
@@ -48,15 +50,15 @@ public interface IGuild extends IGenericInterface
 
     boolean isMember(IUser user);
 
-    Member getMember(IUser user);
+    IMember getMember(IUser user);
 
-    Member getMemberById(String userId);
+    IMember getMemberById(String userId);
 
-    Member getMemberById(long userId);
+    IMember getMemberById(long userId);
 
-    List<Member> getMembers();
+    List<IMember> getMembers();
 
-    List<Member> getMembersWithRole(IRole... roles);
+    List<IMember> getMembersWithRole(IRole... roles);
 
     // Guild Channel Methods //
 
@@ -98,7 +100,7 @@ public interface IGuild extends IGenericInterface
 
     List<IRole> getRoles();
 
-    List<Role> getRolesByName(@Nonnull String name, boolean ignoreCase);
+    List<IRole> getRolesByName(@Nonnull String name, boolean ignoreCase);
 
     // Guild Emote Methods //
 
@@ -112,7 +114,7 @@ public interface IGuild extends IGenericInterface
 
     void addRoleToMember(long id, @Nonnull IRole role);
 
-    void removeRoleFromMember(@Nonnull Member member, @Nonnull IRole role);
+    void removeRoleFromMember(@Nonnull IMember member, @Nonnull IRole role);
 
     void removeRoleFromMember(long id, @Nonnull IRole role);
 
