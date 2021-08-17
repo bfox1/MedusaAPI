@@ -1,6 +1,7 @@
 package io.github.bfox1;
 
 import io.github.bfox1.command.ICommand;
+import io.github.bfox1.manager.IActivityEventManager;
 import io.github.bfox1.manager.ICommandManager;
 import io.github.bfox1.manager.IEmbeddedManager;
 import io.github.bfox1.manager.IUserManager;
@@ -15,6 +16,8 @@ public interface IMedusaAPI
     IUserManager<IMedusaUser> getUserManager();
 
     IEmbeddedManager getEmbedManager();
+
+    IActivityEventManager getEventManager();
 
     IYamlLoader createYamlLoader(String name);
 

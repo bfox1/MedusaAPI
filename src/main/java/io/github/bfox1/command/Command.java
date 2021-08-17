@@ -3,10 +3,11 @@ package io.github.bfox1.command;
 import io.github.bfox1.event.IEvent;
 import io.github.bfox1.utils.ActionResult;
 import io.github.bfox1.utils.IActionResult;
+import jdawrapper.entity.IGenericInterface;
 
 import java.util.LinkedList;
 
-public abstract class Command implements ICommand
+public abstract class Command<T extends IGenericInterface> implements ICommand<T>
 {
     private final String name;
     private final String permNode;
@@ -27,7 +28,7 @@ public abstract class Command implements ICommand
      * @return The Action Result.
      */
     @Override
-    public final IActionResult<String> execute(IEvent event, LinkedList<String> args)
+    public final IActionResult<String> execute(IEvent<T> event, LinkedList<String> args)
     {
         if(args.size() != 0)
         {

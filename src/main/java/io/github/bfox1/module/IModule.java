@@ -1,6 +1,6 @@
 package io.github.bfox1.module;
 
-import io.github.bfox1.IMedusaAPI;
+import io.github.bfox1.manager.IEventListenerLoader;
 import io.github.bfox1.manager.IModuleCommandLoader;
 import io.github.bfox1.utils.IYamlLoader;
 
@@ -36,7 +36,7 @@ public interface IModule
      */
     void loadCommands(IModuleCommandLoader commandLoader);
 
-
+    void loadEventListeners(IEventListenerLoader listenerLoader);
 
     /**
      * The Config is a Class Wrapper to store data. In this case about your Module.

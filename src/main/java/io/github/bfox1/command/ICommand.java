@@ -2,10 +2,11 @@ package io.github.bfox1.command;
 
 import io.github.bfox1.event.IEvent;
 import io.github.bfox1.utils.IActionResult;
+import jdawrapper.entity.IGenericInterface;
 
 import java.util.LinkedList;
 
-public interface ICommand
+public interface ICommand<T extends IGenericInterface>
 {
 
     /**
@@ -76,7 +77,7 @@ public interface ICommand
      * @param args The Arguments passed after the command was entered.
      * @return The Action Result.
      */
-    IActionResult<String> execute(IEvent event, LinkedList<String> args);
+     IActionResult<String> execute(IEvent<T> event, LinkedList<String> args);
 
     /**
      * Returns the description of the Command. Not required, but all commands should have one.
