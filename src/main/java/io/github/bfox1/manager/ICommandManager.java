@@ -1,7 +1,6 @@
 package io.github.bfox1.manager;
 
-import io.github.bfox1.command.ICommand;
-import io.github.bfox1.module.IModule;
+import io.github.bfox1.module.IPlugin;
 import io.github.bfox1.utils.IActionResult;
 import io.github.bfox1.utils.ICommandResult;
 
@@ -41,11 +40,11 @@ public interface ICommandManager<T> extends IManager<T>
      * @param module
      */
     @Deprecated
-    void removePluginCommand(IModule module);
+    void removePluginCommand(IPlugin module);
 
-    void removeModuleFromService(String service, IModule module);
+    void removeModuleFromService(String service, IPlugin module);
 
-    void removeModuleFromAllServices(IModule module);
+    void removeModuleFromAllServices(IPlugin module);
 
     /**
      * Checks if the Guild/Twitch Channel has no commands.
@@ -70,9 +69,9 @@ public interface ICommandManager<T> extends IManager<T>
      */
     boolean isChatCommand(String message);
 
-    IModuleCommandLoader getModuleCommandLoader(String id, String moduleID);
+    IPluginCommandLoader getModuleCommandLoader(String id, String moduleID);
 
-    IModuleCommandLoader createModuleCommandLoader(String id, String moduleID);
+    IPluginCommandLoader createModuleCommandLoader(String id, String moduleID);
 
 
 

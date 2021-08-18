@@ -1,10 +1,10 @@
 package io.github.bfox1.module;
 
 import io.github.bfox1.manager.IEventListenerLoader;
-import io.github.bfox1.manager.IModuleCommandLoader;
+import io.github.bfox1.manager.IPluginCommandLoader;
 import io.github.bfox1.utils.IYamlLoader;
 
-public interface IModule
+public interface IPlugin
 {
 
     /**
@@ -34,7 +34,7 @@ public interface IModule
     /**
      * This gets loaded during the InitCommands. This occurs at the final stage of the Module loading.
      */
-    void loadCommands(IModuleCommandLoader commandLoader);
+    void loadCommands(IPluginCommandLoader commandLoader);
 
     void loadEventListeners(IEventListenerLoader listenerLoader);
 

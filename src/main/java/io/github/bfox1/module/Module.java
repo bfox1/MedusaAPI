@@ -3,7 +3,7 @@ package io.github.bfox1.module;
 import io.github.bfox1.IMedusaAPI;
 import io.github.bfox1.utils.IYamlLoader;
 
-public abstract class Module implements IModule
+public abstract class Module implements IPlugin
 {
     private String name;
     private final int id;
