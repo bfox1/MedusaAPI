@@ -1,6 +1,8 @@
 package io.github.bfox1.manager;
 
-public interface IActivityEventManager
+import io.github.bfox1.event.EventListener;
+
+public interface IActivityEventManager extends IManager<EventListener>
 {
 
 
