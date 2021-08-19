@@ -2,6 +2,7 @@ package io.github.bfox1.module;
 
 import io.github.bfox1.manager.IEventListenerLoader;
 import io.github.bfox1.manager.IPluginCommandLoader;
+import io.github.bfox1.manager.IPluginLoader;
 import io.github.bfox1.utils.IYamlLoader;
 
 public interface IPlugin
@@ -34,9 +35,17 @@ public interface IPlugin
     /**
      * This gets loaded during the InitCommands. This occurs at the final stage of the Module loading.
      */
+    @Deprecated
     void loadCommands(IPluginCommandLoader commandLoader);
 
+    @Deprecated
     void loadEventListeners(IEventListenerLoader listenerLoader);
+
+    /**
+     * This gets loaded during the onReadyEvent of Medusa.
+     * @param loader
+     */
+    void onReadyEvent(IPluginLoader loader);
 
     /**
      * The Config is a Class Wrapper to store data. In this case about your Module.
