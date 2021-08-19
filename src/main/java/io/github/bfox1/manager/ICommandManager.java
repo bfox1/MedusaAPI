@@ -73,7 +73,9 @@ public interface ICommandManager<T> extends IManager<T>
 
     IPluginCommandLoader createModuleCommandLoader(String id, String moduleID);
 
+    IPluginLoader getPluginLoader(String id, String pluginId);
 
+    IPluginLoader createPluginLoader(String id, String pluginId);
 
 
 }

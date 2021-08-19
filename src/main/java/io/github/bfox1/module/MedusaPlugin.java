@@ -3,13 +3,13 @@ package io.github.bfox1.module;
 import io.github.bfox1.IMedusaAPI;
 import io.github.bfox1.utils.IYamlLoader;
 
-public abstract class Module implements IPlugin
+public abstract class MedusaPlugin implements IPlugin
 {
     private String name;
     private final int id;
     private static IMedusaAPI apiInstance;
 
-    public Module(int id, IMedusaAPI api)
+    public MedusaPlugin(int id, IMedusaAPI api)
     {
         this.id = id;
         apiInstance = api;
