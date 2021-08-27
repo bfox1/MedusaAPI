@@ -6,7 +6,7 @@
 
     <groupId>io.github.bfox1</groupId>
     <artifactId>medusaapi</artifactId>
-    <version>0.1</version>
+    <version>0.2r1</version>
 
     <build>
         <plugins>
